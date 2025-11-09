@@ -16,6 +16,8 @@ The system must handle real-time inference while maintaining robustness to noise
 
 ## Methods
 
+![arch_first](arch_v0.drawio.png)
+
 The methodology is designed to follow ML engineering best practices, adapted for local execution: modular pipelines for data handling, iterative model development with techniques like transfer learning, and lightweight deployment using an API.
 
 Data preparation uses the FER-2013 dataset (35,887 images across 7 emotion classes), exploration with matplotlib for class distribution analysis, and preprocessing to 48x48 grayscale with torchvision transforms (e.g., normalization, augmentation via flips and crops to mitigate overfitting).
