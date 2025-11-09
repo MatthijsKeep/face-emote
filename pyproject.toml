@@ -7,6 +7,7 @@ requires-python = ">=3.13.9"
 dependencies = [
     "ipykernel>=7.1.0",
     "kagglehub>=0.3.13",
+    "matplotlib>=3.10.7",
     "mlcroissant>=1.0.22",
     "pip>=25.3",
     "pygraphviz>=1.14",
