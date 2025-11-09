@@ -5,8 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13.9"
 dependencies = [
+    "ipykernel>=7.1.0",
+    "kagglehub>=0.3.13",
     "mlcroissant>=1.0.22",
     "pip>=25.3",
     "pygraphviz>=1.14",
     "setuptools>=80.9.0",
+    "torchvision>=0.24.0",
 ]
