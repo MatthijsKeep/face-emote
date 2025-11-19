@@ -208,3 +208,5 @@ __marimo__/
 
 # Image data
 data/files/
+
+tmp.py

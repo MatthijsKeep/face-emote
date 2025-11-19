@@ -14,3 +14,19 @@ dependencies = [
     "setuptools>=80.9.0",
     "torchvision>=0.24.0",
 ]
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.10.0",
+    "cz-conventional-gitmoji>=0.7.0",
+]
+
+[tool.commitizen]
+name = "cz_gitmoji"
+version = "0.1.0"
+version_provider = "uv"
+tag_format = "v$version"
+update_changelog_on_bump = true
+
+[alias]
+    cz = "!uv run cz commit"
