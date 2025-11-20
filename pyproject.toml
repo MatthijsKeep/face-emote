@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13.9"
 dependencies = [
+    "commitizen>=4.10.0",
+    "cz-conventional-gitmoji>=0.7.0",
     "ipykernel>=7.1.0",
     "kagglehub>=0.3.13",
     "matplotlib>=3.10.7",
@@ -15,18 +17,17 @@ dependencies = [
     "torchvision>=0.24.0",
 ]
 
-[dependency-groups]
-dev = [
-    "commitizen>=4.10.0",
-    "cz-conventional-gitmoji>=0.7.0",
-]
-
 [tool.commitizen]
 name = "cz_gitmoji"
 version = "0.1.0"
-version_provider = "uv"
 tag_format = "v$version"
+version_scheme = "pep440"
+version_provider = "uv"
 update_changelog_on_bump = true
+major_version_zero = true
 
-[alias]
-    cz = "!uv run cz commit"
+[dependency-groups]
+dev = [
+    "cz-conventional-gitmoji>=0.7.0",
+    "pre-commit>=4.4.0",
+]
